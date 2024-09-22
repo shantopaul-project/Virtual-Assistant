@@ -76,7 +76,7 @@ h1{
 /* Mobile - L size - main Mobile*/
 @media screen and (max-width: 425px){
     #logo{
-        width: 120vw;
+        width: 100vw;
     }
 
     h1{
@@ -99,7 +99,10 @@ h1{
         width: 150px;
         display: none;
         padding: 1px;
-        
+        position: absolute;
+        top: 138vw; 
+        align-items: center;
+        justify-content: center;
     }
     #btn{
         width: 90%;
@@ -136,7 +139,7 @@ h1{
         color: #d1288b;
     }
     #padmasree{
-        color: #25a3c9;
+        color: #00c1fc;
     }
 }
 
