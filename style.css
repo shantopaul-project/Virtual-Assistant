@@ -29,7 +29,7 @@ h1{
 }
 #va{
     color: #25a3c9;
-    font-size: 45px;
+    font-size: 44px;
 }
 #voice{
     width: 150px;
@@ -73,7 +73,8 @@ h1{
     color: #25a3c9;
 }
 
-@media screen and (max-width: 600px){
+/* Mobile - L size */
+@media screen and (max-width: 425px){
     #logo{
         width: 120vw;
     }
@@ -120,12 +121,12 @@ h1{
     }
 
     #copyright{
-        padding: 41px;
+        padding: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
-        font-size: 20px;
+        font-size: 18px;
         position: absolute;
         top: 175vw; 
     }
@@ -136,3 +137,132 @@ h1{
         color: #25a3c9;
     }
 }
+
+/* Mobile - M size */
+@media only screen and (max-width: 375px){
+    #logo{
+        width: 123vw;
+    }
+    h1{
+        color: aliceblue;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 17px;
+    }
+    #name{
+        color: #d1288b;
+        font-size: 22px;
+    }
+    #va{
+        color: #25a3c9;
+        font-size: 22px;
+    }
+    #voice{
+        width: 150px;
+        display: none;
+    }
+    #btn{
+        width: 90%;
+        background: linear-gradient(to right, rgb(21,145,207), rgb(201,41,116));
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 2px 2px 10px rgb(21,145,207),2px 2px 10px rgb(201,41,116);
+        border: none;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #btn:hover{
+        box-shadow: 2px 2px 20px rgb(21,145,207),2px 2px 20px rgb(201,41,116);
+        letter-spacing: 2px;
+    }
+
+    #copyright{
+        padding: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        font-size: 18px;
+        position: absolute;
+        top: 184vw; 
+    }
+    #love{
+        color: #d1288b;
+    }
+    #padmasree{
+        color: #25a3c9;
+    }
+}
+
+
+/* Mobile - small size */
+@media only screen and (max-width: 320px){
+    #logo{
+        width: 124vw;
+    }
+    h1{
+        color: aliceblue;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+    }
+    #name{
+        color: #d1288b;
+        font-size: 20px;
+    }
+    #va{
+        color: #25a3c9;
+        font-size: 20px;
+    }
+    #voice{
+        width: 150px;
+        display: none;
+    }
+    #btn{
+        width: 90%;
+        background: linear-gradient(to right, rgb(21,145,207), rgb(201,41,116));
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 2px 2px 10px rgb(21,145,207),2px 2px 10px rgb(201,41,116);
+        border: none;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    #btn:hover{
+        box-shadow: 2px 2px 20px rgb(21,145,207),2px 2px 20px rgb(201,41,116);
+        letter-spacing: 2px;
+    }
+
+    #copyright{
+        padding: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        font-size: 15px;
+        position: absolute;
+        top: 195vw; 
+    }
+    #love{
+        color: #d1288b;
+    }
+    #padmasree{
+        color: #25a3c9;
+    }
+
+}
+
