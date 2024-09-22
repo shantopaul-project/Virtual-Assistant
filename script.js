@@ -49,7 +49,7 @@ function takeCommand(message){
     if( message.includes("hello") || message.includes("hey") || message.includes("Padmasree")){
         speak("hello sir, what can i help you?")
     }
-    else if( message.includes("Who are you")){
+    else if( message.includes("who are you")){
         speak("I am virtual assistant , created by Shanto Paul")
     }
     else if( message.includes("time")){
