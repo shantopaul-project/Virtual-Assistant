@@ -73,7 +73,7 @@ h1{
     color: #25a3c9;
 }
 
-/* Mobile - L size */
+/* Mobile - L size - main Mobile*/
 @media screen and (max-width: 425px){
     #logo{
         width: 120vw;
@@ -98,6 +98,8 @@ h1{
     #voice{
         width: 150px;
         display: none;
+        padding: 1px;
+        
     }
     #btn{
         width: 90%;
@@ -121,7 +123,7 @@ h1{
     }
 
     #copyright{
-        padding: 40px;
+        padding: 0px;
         display: flex;
         align-items: center;
         justify-content: center;
