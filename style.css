@@ -146,7 +146,7 @@ h1{
 /* Mobile - M size */
 @media only screen and (max-width: 375px){
     #logo{
-        width: 123vw;
+        width: 100vw;
     }
     h1{
         color: aliceblue;
