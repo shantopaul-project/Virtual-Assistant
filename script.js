@@ -50,7 +50,7 @@ function takeCommand(message){
         speak("hello sir, what can i help you?")
     }
     else if( message.includes("who are you")){
-        speak("I am virtual assistant , created by Shanto Paul")
+        speak("I am Padmasree ,Your virtual assistant ,created by Shanto")
     }
     else if( message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
