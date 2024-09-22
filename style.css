@@ -191,11 +191,11 @@
     }
     #name{
         color: #d1288b;
-        font-size: 24px;
+        font-size: 23px;
     }
     #va{
         color: #25a3c9;
-        font-size: 24px;
+        font-size: 23px;
     }
     #voice{
         width: 150px;
@@ -249,7 +249,7 @@
         font-family: "Protest Guerrilla", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 20px;
+        font-size: 18px;
     }
     #name{
         color: #d1288b;
