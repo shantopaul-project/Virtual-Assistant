@@ -164,20 +164,6 @@
         width: 80%; /* Adjusted width for the image on mobile */
         max-width: 300px; /* Maximum width for the image on mobile */
     }
-    .main .image-container h1 {
-        font-size: 40px; /* Decreased font size for "Cipher" on mobile */
-    }
-    .main .input {
-        width: 80vw; /* Adjusted width for mobile */
-    }
-    .main .input .talk {
-        width: 60px; /* Adjusted width for smaller microphone button on mobile */
-        height: 60px; /* Adjusted height for smaller microphone button on mobile */
-        font-size: 24px; /* Adjusted font size for smaller microphone button on mobile */
-    }
-    .main .input .content {
-        font-size: 16px; /* Adjusted font size for "Click Here to Speak to Cipher" on mobile */
-    }
 }
 
 /* Mobile - L size - main Mobile*/
@@ -187,7 +173,7 @@
         font-family: "Protest Guerrilla", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 20px;
+        font-size: 18px;
     }
     #name{
         color: #d1288b;
