@@ -70,15 +70,15 @@ function takeCommand(message){
     }
 
     //Done
-    else if( message.includes("your name") ){
-        speak("My name is Padmasree")
-    }
-
-    //Done
     else if( message.includes("shanto's mother name") || message.includes("mother name")){
         speak("Shanto's mother name is Sadhana Rani Pal")
     }
 
+    //Done
+    else if( message.includes("your name") ){
+        speak("My name is Padmasree")
+    }
+    
     //Done
     else if( message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
