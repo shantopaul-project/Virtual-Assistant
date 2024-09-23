@@ -70,12 +70,12 @@ function takeCommand(message){
     }
 
     //Done
-    else if( message.includes("shanto's mother name") || message.includes("mother name")){
+    else if( message.includes("mother") || message.includes("mother name") || message.includes("shanto's mother name") ){
         speak("Shanto's mother name is Sadhana Rani Pal")
     }
 
     //Done
-    else if( message.includes("your name") ){
+    else if( message.includes("your name")){
         speak("My name is Padmasree")
     }
     
