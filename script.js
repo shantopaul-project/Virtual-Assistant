@@ -70,7 +70,7 @@ function takeCommand(message){
     }
 
     //Done
-    else if( message.includes("your name") || message.includes("name")){
+    else if( message.includes("your name") ){
         speak("My name is Padmasree")
     }
 
