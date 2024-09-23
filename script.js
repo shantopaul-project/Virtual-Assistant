@@ -49,14 +49,17 @@ function takeCommand(message){
     btn.style.display = "flex"
     voice.style.display = "none"
 
-    if( message.includes("hello") || message.includes("hey") || message.includes("hi") || message.includes("Padmasree")){
+    //Done
+    if( message.includes("hello") || message.includes("hi") || message.includes("Padmasree") || message.includes("Padmashree") || message.includes("padmashree") || message.includes("padmasree")){
         speak("hello sir,what can i help you?")
     }
-
-    else if( message.includes("who are you")){
+    
+    //Done
+    else if( message.includes("who are you") || message.includes("Padmashree how are you") || message.includes("Padmasree how are you") || message.includes("padmasree how are you")){
         speak("I am Padmasree ,Your virtual assistant ,created by Shanto Sir")
     }
 
+    //Done
     else if( message.includes("how are you") || message.includes("Padmashree how are you") || message.includes("Padmasree how are you") || message.includes("padmasree how are you")){
         speak("I’m doing great, Sir .How can i help you?")
     }
