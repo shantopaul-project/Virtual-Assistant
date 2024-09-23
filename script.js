@@ -13,28 +13,30 @@ function speak(text){
 
 function wishMe(){
     let day = new Date()
-    let hours = day.getHours()
-    if( hours >= 0 && hours < 12 ){
-        speak("Good Morning Shanto")
+    let hour = day.getHours();
+
+    if( hour >= 0 && hour < 12 ){
+        speak("Good Morning Sir");
     }
-    else if( hours >= 12 && hours < 16 ){
-        speak("Good Afternoon Shanto")
+    else if( hour >= 12 && hour < 16 ){
+        speak("Good Afternoon Sir")
     }
     else{
-        speak("Good Evening Shanto")
+        speak("Good Evening Sir")
     }
 }
-window.addEventListener('load',()=>{
-    wishMe()
-})
+window.addEventListener('load', () => {
+    wishMe();
+});
 
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 let recognition = new speechRecognition()
+
 recognition.onresult = (event)=>{
     let currentIndex = event.resultIndex
     let transcript = event.results[currentIndex][0].transcript
     content.innerText = transcript
-    takeCommand(transcript.toLowerCase())
+    takeCommand(transcript.toLowerCase());
 }
 
 btn.addEventListener("click",()=>{
@@ -46,12 +48,23 @@ btn.addEventListener("click",()=>{
 function takeCommand(message){
     btn.style.display = "flex"
     voice.style.display = "none"
-    if( message.includes("hello") || message.includes("hey") || message.includes("Padmasree")){
-        speak("hello sir, what can i help you?")
+
+    if( message.includes("hello") || message.includes("hey") || message.includes("hi") || message.includes("Padmasree")){
+        speak("hello sir,what can i help you?")
     }
+
     else if( message.includes("who are you")){
         speak("I am Padmasree ,Your virtual assistant ,created by Shanto Sir")
     }
+
+    else if( message.includes("how are you") || message.includes("Padmashree how are you") || message.includes("Padmasree how are you") || message.includes("padmasree how are you")){
+        speak("I’m doing great, Sir .How can i help you?")
+    }
+
+    else if( message.includes("who made you") || message.includes("create you") || message.includes("owner you") || message.includes("owner")){
+        speak("created by Shanto Sir")
+    }
+
     else if( message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
         speak(time)
@@ -60,13 +73,19 @@ function takeCommand(message){
         let date = new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speak(date)
     }
+
+    else if (message.includes("open google")) {
+        speak("Opening Google...");
+        window.open("https://google.com", "_blank");
+    }
+
     else if(message.includes("open youtube")){
         speak("opening youtube")
         window.open("https://www.youtube.com/", "_blank")
     }
     else if(message.includes("search")){
-        speak(`search on google ${message.replace("Padmasree","") || message.replace("Padma","")} `)
-        window.open(`https://www.google.com/search?q=${message.replace("Padmasree","") || message.replace("Padma","")}`)
+        speak(`search on google ${message.replace("Padmasree","") || message.replace("search","") || message.replace("Padmashree","")} `)
+        window.open(`https://www.google.com/search?q=${message.replace("Padmasree","") || message.replace("search","") || message.replace("Padmashree","")}`)
     }
     else if(message.includes("open calculator")){
         speak("opening calculator")
