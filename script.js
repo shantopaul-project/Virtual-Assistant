@@ -97,10 +97,16 @@ function takeCommand(message){
         speak("opening youtube")
         window.open("https://www.youtube.com/", "_blank")
     }
+
+    else if(message.includes("University") || message.includes("university")){
+        speak("আমি তোমাকে যা পড়াবো এগুলো মুখস্থ কখনোই করো না")
+    }
+    //Not Done
     else if(message.includes("search")){
         speak(`search on google ${message.replace("Padmasree","") || message.replace("search","") || message.replace("Padmashree","")} `)
         window.open(`https://www.google.com/search?q=${message.replace("Padmasree","") || message.replace("search","") || message.replace("Padmashree","")}`)
     }
+
     else if(message.includes("open calculator")){
         speak("opening calculator")
         window.open("calculator://")
