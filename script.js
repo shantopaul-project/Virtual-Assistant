@@ -64,24 +64,35 @@ function takeCommand(message){
         speak("I’m doing great, Sir .How can i help you?")
     }
 
+    //Done
     else if( message.includes("who made you") || message.includes("create you") || message.includes("owner you") || message.includes("owner")){
         speak("created by Shanto Sir")
     }
 
+    //Done
+    else if( message.includes("your name") || message.includes("name")){
+        speak("My name is Padmasree")
+    }
+
+    //Done
     else if( message.includes("time")){
         let time = new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
         speak(time)
     }
+
+    //Done
     else if( message.includes("date")){
         let date = new Date().toLocaleString(undefined,{day:"numeric",month:"short"})
         speak(date)
     }
 
+    //Done
     else if (message.includes("open google")) {
         speak("Opening Google...");
         window.open("https://google.com", "_blank");
     }
 
+    //Done
     else if(message.includes("open youtube")){
         speak("opening youtube")
         window.open("https://www.youtube.com/", "_blank")
